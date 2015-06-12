@@ -1,0 +1,6 @@
+C:\Users\Monica\Desktop\IPC2J15\Fase 2\Quetzal Express\Quetzal Express\bin\Quetzal Express.dll.config
+C:\Users\Monica\Desktop\IPC2J15\Fase 2\Quetzal Express\Quetzal Express\bin\Quetzal Express.dll
+C:\Users\Monica\Desktop\IPC2J15\Fase 2\Quetzal Express\Quetzal Express\bin\Quetzal Express.pdb
+C:\Users\Monica\Desktop\IPC2J15\Fase 2\Quetzal Express\Quetzal Express\obj\Debug\Quetzal Express.csprojResolveAssemblyReference.cache
+C:\Users\Monica\Desktop\IPC2J15\Fase 2\Quetzal Express\Quetzal Express\obj\Debug\Quetzal Express.dll
+C:\Users\Monica\Desktop\IPC2J15\Fase 2\Quetzal Express\Quetzal Express\obj\Debug\Quetzal Express.pdb
