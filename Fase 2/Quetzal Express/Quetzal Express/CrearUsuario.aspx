@@ -36,7 +36,9 @@
                 <td class="auto-style5" style="background-color: #E69242; border-style: outset; font-size: xx-large; text-align: center; font-weight: 700;">REGISTRESE</td>
             </tr>
             <tr>
-                <td style="background-color: #E69242; border-style: outset; font-size: xx-large; text-align: center; font-weight: 700;"></td>
+                <td style="background-color: #E69242; border-style: outset; font-size: xx-large; text-align: center; font-weight: 700;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button2" runat="server" BackColor="#E69242" BorderColor="#E69242" OnClick="Button2_Click" style="text-align: right" Text="Página de inicio" />
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
@@ -59,13 +61,13 @@
             <tr>
                 <td class="auto-style3">&nbsp;</td>
                 <td style="font-weight: 700; font-size: large">Contraseña<br />
-                    <asp:TextBox ID="TextBox4" runat="server" Width="250px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox4" runat="server" TextMode="Password" Width="250px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
                 <td style="font-weight: 700; font-size: large">Confirmar Contraseña<br />
-                    <asp:TextBox ID="TextBox5" runat="server" Width="250px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox5" runat="server" TextMode="Password" Width="250px"></asp:TextBox>
 &nbsp;
                     <asp:Label ID="Label1" runat="server" style="font-style: italic"></asp:Label>
                 </td>
@@ -103,7 +105,7 @@
             <tr>
                 <td class="auto-style3">&nbsp;</td>
                 <td style="font-weight: 700; font-size: large; text-align: right">
-                    <asp:Button ID="Button1" runat="server" BackColor="#00A2D0" BorderColor="#00A2D0" Text="Registrarse" />
+                    <asp:Button ID="Button1" runat="server" BackColor="#00A2D0" BorderColor="#00A2D0" OnClick="Button1_Click" Text="Registrarse" />
                 </td>
             </tr>
         </table>
