@@ -23,6 +23,9 @@
         .auto-style5 {
             height: 100px;
         }
+        .auto-style6 {
+            height: 34px;
+        }
     </style>
 </head>
 <body style="background-image: url( imagenes/fondo.jpg )">
@@ -36,7 +39,7 @@
                 <td class="auto-style5" style="background-color: #E69242; border-style: outset; font-size: xx-large; text-align: center; font-weight: 700;">REGISTRESE</td>
             </tr>
             <tr>
-                <td style="background-color: #E69242; border-style: outset; font-size: xx-large; text-align: center; font-weight: 700;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <td class="auto-style6" style="background-color: #E69242; border-style: outset; font-size: xx-large; text-align: center; font-weight: 700;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="Button2" runat="server" BackColor="#E69242" BorderColor="#E69242" OnClick="Button2_Click" style="text-align: right" Text="Página de inicio" />
                     &nbsp;</td>
             </tr>
