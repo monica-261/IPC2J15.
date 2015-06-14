@@ -72,7 +72,7 @@
     <Content Include="PaginaPrincipal.aspx" />
     <Content Include="LogIn.aspx" />
     <Content Include="CrearUsuario.aspx" />
-    <Content Include="ModClien.aspx" />
+    <Content Include="InicioClien.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ModificarClien.aspx.cs">
@@ -104,12 +104,12 @@
     <Compile Include="CrearUsuario.aspx.designer.cs">
       <DependentUpon>CrearUsuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ModClien.aspx.cs">
-      <DependentUpon>ModClien.aspx</DependentUpon>
+    <Compile Include="InicioClien.aspx.cs">
+      <DependentUpon>InicioClien.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ModClien.aspx.designer.cs">
-      <DependentUpon>ModClien.aspx</DependentUpon>
+    <Compile Include="InicioClien.aspx.designer.cs">
+      <DependentUpon>InicioClien.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ModClien.aspx.cs" Inherits="Quetzal_Express.WebForm4" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="InicioClien.aspx.cs" Inherits="Quetzal_Express.WebForm4" %>
 
 <!DOCTYPE html>
 
@@ -36,10 +36,11 @@
             <tr>
                 <td class="auto-style3" rowspan="2" style="border-style: outset">
                     <img alt="" class="auto-style5" src="imagenes/Quetzal.jpg" /></td>
-                <td class="auto-style4" style="border-style: outset; background-color: #E69242;"></td>
+                <td class="auto-style4" style="border-style: outset; background-color: #E69242; text-align: center; font-weight: 700; font-size: xx-large;">BIENVENIDO</td>
             </tr>
             <tr>
-                <td class="auto-style6" style="border-style: outset; background-color: #E69242;"></td>
+                <td class="auto-style6" style="border-style: outset; background-color: #E69242;">&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" BackColor="#E69242" BorderColor="#E69242" OnClick="Button1_Click" Text="Modificar Usuario" Width="116px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
