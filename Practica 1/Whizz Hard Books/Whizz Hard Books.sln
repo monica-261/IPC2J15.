@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebService", "WebService\WebService.csproj", "{8F1DAC5C-E759-4E9A-8CBD-DDF0EB92729C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aplicacion", "WindowsFormsApplication1\Aplicacion.csproj", "{A512CEA9-58B7-4497-A5A9-454DF194BD4D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Imagenes", "Imagenes", "{F89F8B1F-403C-4532-B7A6-3FA15CDE7471}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\Pictures\Iconos\arrow-105-32.ico = ..\..\..\..\Pictures\Iconos\arrow-105-32.ico
+		..\..\..\..\Pictures\Iconos\arrow-105-32.png = ..\..\..\..\Pictures\Iconos\arrow-105-32.png
+		..\..\..\..\Pictures\Iconos\arrow-4-32.png = ..\..\..\..\Pictures\Iconos\arrow-4-32.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F1DAC5C-E759-4E9A-8CBD-DDF0EB92729C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F1DAC5C-E759-4E9A-8CBD-DDF0EB92729C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F1DAC5C-E759-4E9A-8CBD-DDF0EB92729C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F1DAC5C-E759-4E9A-8CBD-DDF0EB92729C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A512CEA9-58B7-4497-A5A9-454DF194BD4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A512CEA9-58B7-4497-A5A9-454DF194BD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A512CEA9-58B7-4497-A5A9-454DF194BD4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A512CEA9-58B7-4497-A5A9-454DF194BD4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
