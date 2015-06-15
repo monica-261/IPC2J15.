@@ -47,21 +47,23 @@ namespace WindowsFormsApplication1
                 libro.Show();
                 this.Hide();
             }
-            //if (radioButton2.Checked)
-            //{
-            //    consulta.Show();
-            //    this.Hide();
-            //}
+            if (radioButton2.Checked)
+            {
+                Consulta consulta = new Consulta();
+                consulta.Show();
+                this.Hide();
+            }
             //if (radioButton3.Checked)
             //{
             //    prestamo.Show();
             //    this.Hide();
             //}
-            //if (radioButton4.Checked)
-            //{
-            //    miembro.Show();
-            //    this.Hide();
-            //}
+            if (radioButton4.Checked)
+            {
+                nuevoMiembro miembro = new nuevoMiembro();
+                miembro.Show();
+                this.Hide();
+            }
             //if (radioButton5.Checked)
             //{
             //    maspres.Show();

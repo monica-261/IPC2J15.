@@ -9,26 +9,18 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class RegistrarLibro : Form
+    public partial class Consulta : Form
     {
-        
-        public RegistrarLibro()
+        public Consulta()
         {
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             PaginaPrincipal pg = new PaginaPrincipal();
             pg.Show();
             this.Close();
-
-            
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
