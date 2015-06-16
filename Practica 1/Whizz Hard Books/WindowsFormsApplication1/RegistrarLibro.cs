@@ -30,5 +30,21 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string nombre, autor, tema, pag;
+            ServiceReference1.ServicioBibliotecaSoapClient servicio = new ServiceReference1.ServicioBibliotecaSoapClient();
+            
+            nombre = textBox1.Text;
+            autor = textBox2.Text;
+            tema = textBox3.Text;
+            pag = textBox4.Text;
+
+            servicio.NuevoLibro(nombre, autor, tema, pag);
+
+
+            
+        }
     }
 }

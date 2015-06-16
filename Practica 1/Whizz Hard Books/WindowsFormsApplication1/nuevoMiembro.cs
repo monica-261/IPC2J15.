@@ -45,6 +45,12 @@ namespace WindowsFormsApplication1
             tel = textBox5.Text;
 
             servicio.InsertarCliente(carnet, nombre, dpi, dir, tel);
+            
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
 
             
 

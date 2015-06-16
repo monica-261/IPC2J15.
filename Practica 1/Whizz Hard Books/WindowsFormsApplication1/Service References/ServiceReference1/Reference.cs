@@ -18,6 +18,18 @@ namespace WindowsFormsApplication1.ServiceReference1 {
         // CODEGEN: Generating message contract since element name carnet from namespace http://LocalHost/WebServiceBiblioteca is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://LocalHost/WebServiceBiblioteca/InsertarCliente", ReplyAction="*")]
         WindowsFormsApplication1.ServiceReference1.InsertarClienteResponse InsertarCliente(WindowsFormsApplication1.ServiceReference1.InsertarClienteRequest request);
+        
+        // CODEGEN: Generating message contract since element name nombre from namespace http://LocalHost/WebServiceBiblioteca is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://LocalHost/WebServiceBiblioteca/NuevoLibro", ReplyAction="*")]
+        WindowsFormsApplication1.ServiceReference1.NuevoLibroResponse NuevoLibro(WindowsFormsApplication1.ServiceReference1.NuevoLibroRequest request);
+        
+        // CODEGEN: Generating message contract since element name buscar from namespace http://LocalHost/WebServiceBiblioteca is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://LocalHost/WebServiceBiblioteca/Consulta", ReplyAction="*")]
+        WindowsFormsApplication1.ServiceReference1.ConsultaResponse Consulta(WindowsFormsApplication1.ServiceReference1.ConsultaRequest request);
+        
+        // CODEGEN: Generating message contract since element name libro from namespace http://LocalHost/WebServiceBiblioteca is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://LocalHost/WebServiceBiblioteca/Prestamo", ReplyAction="*")]
+        WindowsFormsApplication1.ServiceReference1.PrestamoResponse Prestamo(WindowsFormsApplication1.ServiceReference1.PrestamoRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -104,6 +116,238 @@ namespace WindowsFormsApplication1.ServiceReference1 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class NuevoLibroRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="NuevoLibro", Namespace="http://LocalHost/WebServiceBiblioteca", Order=0)]
+        public WindowsFormsApplication1.ServiceReference1.NuevoLibroRequestBody Body;
+        
+        public NuevoLibroRequest() {
+        }
+        
+        public NuevoLibroRequest(WindowsFormsApplication1.ServiceReference1.NuevoLibroRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://LocalHost/WebServiceBiblioteca")]
+    public partial class NuevoLibroRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string nombre;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string autor;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string tema;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string pag;
+        
+        public NuevoLibroRequestBody() {
+        }
+        
+        public NuevoLibroRequestBody(string nombre, string autor, string tema, string pag) {
+            this.nombre = nombre;
+            this.autor = autor;
+            this.tema = tema;
+            this.pag = pag;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class NuevoLibroResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="NuevoLibroResponse", Namespace="http://LocalHost/WebServiceBiblioteca", Order=0)]
+        public WindowsFormsApplication1.ServiceReference1.NuevoLibroResponseBody Body;
+        
+        public NuevoLibroResponse() {
+        }
+        
+        public NuevoLibroResponse(WindowsFormsApplication1.ServiceReference1.NuevoLibroResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://LocalHost/WebServiceBiblioteca")]
+    public partial class NuevoLibroResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string NuevoLibroResult;
+        
+        public NuevoLibroResponseBody() {
+        }
+        
+        public NuevoLibroResponseBody(string NuevoLibroResult) {
+            this.NuevoLibroResult = NuevoLibroResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ConsultaRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Consulta", Namespace="http://LocalHost/WebServiceBiblioteca", Order=0)]
+        public WindowsFormsApplication1.ServiceReference1.ConsultaRequestBody Body;
+        
+        public ConsultaRequest() {
+        }
+        
+        public ConsultaRequest(WindowsFormsApplication1.ServiceReference1.ConsultaRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://LocalHost/WebServiceBiblioteca")]
+    public partial class ConsultaRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string buscar;
+        
+        public ConsultaRequestBody() {
+        }
+        
+        public ConsultaRequestBody(string buscar) {
+            this.buscar = buscar;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class ConsultaResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="ConsultaResponse", Namespace="http://LocalHost/WebServiceBiblioteca", Order=0)]
+        public WindowsFormsApplication1.ServiceReference1.ConsultaResponseBody Body;
+        
+        public ConsultaResponse() {
+        }
+        
+        public ConsultaResponse(WindowsFormsApplication1.ServiceReference1.ConsultaResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://LocalHost/WebServiceBiblioteca")]
+    public partial class ConsultaResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string ConsultaResult;
+        
+        public ConsultaResponseBody() {
+        }
+        
+        public ConsultaResponseBody(string ConsultaResult) {
+            this.ConsultaResult = ConsultaResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class PrestamoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="Prestamo", Namespace="http://LocalHost/WebServiceBiblioteca", Order=0)]
+        public WindowsFormsApplication1.ServiceReference1.PrestamoRequestBody Body;
+        
+        public PrestamoRequest() {
+        }
+        
+        public PrestamoRequest(WindowsFormsApplication1.ServiceReference1.PrestamoRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://LocalHost/WebServiceBiblioteca")]
+    public partial class PrestamoRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string libro;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string estudiante;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string salida;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string devolucion;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string estado;
+        
+        public PrestamoRequestBody() {
+        }
+        
+        public PrestamoRequestBody(string libro, string estudiante, string salida, string devolucion, string estado) {
+            this.libro = libro;
+            this.estudiante = estudiante;
+            this.salida = salida;
+            this.devolucion = devolucion;
+            this.estado = estado;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class PrestamoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="PrestamoResponse", Namespace="http://LocalHost/WebServiceBiblioteca", Order=0)]
+        public WindowsFormsApplication1.ServiceReference1.PrestamoResponseBody Body;
+        
+        public PrestamoResponse() {
+        }
+        
+        public PrestamoResponse(WindowsFormsApplication1.ServiceReference1.PrestamoResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://LocalHost/WebServiceBiblioteca")]
+    public partial class PrestamoResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string PrestamoResult;
+        
+        public PrestamoResponseBody() {
+        }
+        
+        public PrestamoResponseBody(string PrestamoResult) {
+            this.PrestamoResult = PrestamoResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface ServicioBibliotecaSoapChannel : WindowsFormsApplication1.ServiceReference1.ServicioBibliotecaSoap, System.ServiceModel.IClientChannel {
     }
@@ -146,6 +390,52 @@ namespace WindowsFormsApplication1.ServiceReference1 {
             inValue.Body.tel = tel;
             WindowsFormsApplication1.ServiceReference1.InsertarClienteResponse retVal = ((WindowsFormsApplication1.ServiceReference1.ServicioBibliotecaSoap)(this)).InsertarCliente(inValue);
             return retVal.Body.InsertarClienteResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowsFormsApplication1.ServiceReference1.NuevoLibroResponse WindowsFormsApplication1.ServiceReference1.ServicioBibliotecaSoap.NuevoLibro(WindowsFormsApplication1.ServiceReference1.NuevoLibroRequest request) {
+            return base.Channel.NuevoLibro(request);
+        }
+        
+        public string NuevoLibro(string nombre, string autor, string tema, string pag) {
+            WindowsFormsApplication1.ServiceReference1.NuevoLibroRequest inValue = new WindowsFormsApplication1.ServiceReference1.NuevoLibroRequest();
+            inValue.Body = new WindowsFormsApplication1.ServiceReference1.NuevoLibroRequestBody();
+            inValue.Body.nombre = nombre;
+            inValue.Body.autor = autor;
+            inValue.Body.tema = tema;
+            inValue.Body.pag = pag;
+            WindowsFormsApplication1.ServiceReference1.NuevoLibroResponse retVal = ((WindowsFormsApplication1.ServiceReference1.ServicioBibliotecaSoap)(this)).NuevoLibro(inValue);
+            return retVal.Body.NuevoLibroResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowsFormsApplication1.ServiceReference1.ConsultaResponse WindowsFormsApplication1.ServiceReference1.ServicioBibliotecaSoap.Consulta(WindowsFormsApplication1.ServiceReference1.ConsultaRequest request) {
+            return base.Channel.Consulta(request);
+        }
+        
+        public string Consulta(string buscar) {
+            WindowsFormsApplication1.ServiceReference1.ConsultaRequest inValue = new WindowsFormsApplication1.ServiceReference1.ConsultaRequest();
+            inValue.Body = new WindowsFormsApplication1.ServiceReference1.ConsultaRequestBody();
+            inValue.Body.buscar = buscar;
+            WindowsFormsApplication1.ServiceReference1.ConsultaResponse retVal = ((WindowsFormsApplication1.ServiceReference1.ServicioBibliotecaSoap)(this)).Consulta(inValue);
+            return retVal.Body.ConsultaResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        WindowsFormsApplication1.ServiceReference1.PrestamoResponse WindowsFormsApplication1.ServiceReference1.ServicioBibliotecaSoap.Prestamo(WindowsFormsApplication1.ServiceReference1.PrestamoRequest request) {
+            return base.Channel.Prestamo(request);
+        }
+        
+        public string Prestamo(string libro, string estudiante, string salida, string devolucion, string estado) {
+            WindowsFormsApplication1.ServiceReference1.PrestamoRequest inValue = new WindowsFormsApplication1.ServiceReference1.PrestamoRequest();
+            inValue.Body = new WindowsFormsApplication1.ServiceReference1.PrestamoRequestBody();
+            inValue.Body.libro = libro;
+            inValue.Body.estudiante = estudiante;
+            inValue.Body.salida = salida;
+            inValue.Body.devolucion = devolucion;
+            inValue.Body.estado = estado;
+            WindowsFormsApplication1.ServiceReference1.PrestamoResponse retVal = ((WindowsFormsApplication1.ServiceReference1.ServicioBibliotecaSoap)(this)).Prestamo(inValue);
+            return retVal.Body.PrestamoResult;
         }
     }
 }

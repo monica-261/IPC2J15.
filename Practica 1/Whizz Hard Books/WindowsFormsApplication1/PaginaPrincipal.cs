@@ -53,11 +53,12 @@ namespace WindowsFormsApplication1
                 consulta.Show();
                 this.Hide();
             }
-            //if (radioButton3.Checked)
-            //{
-            //    prestamo.Show();
-            //    this.Hide();
-            //}
+            if (radioButton3.Checked)
+            {
+                Prestamo prestamo = new Prestamo();
+                prestamo.Show();
+                this.Hide();
+            }
             if (radioButton4.Checked)
             {
                 nuevoMiembro miembro = new nuevoMiembro();
