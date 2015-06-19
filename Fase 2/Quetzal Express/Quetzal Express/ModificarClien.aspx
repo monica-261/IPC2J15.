@@ -17,7 +17,7 @@
             height: 148px;
         }
         .auto-style4 {
-            height: 90px;
+            height: 101px;
         }
         .auto-style5 {
             width: 175px;
@@ -63,14 +63,14 @@
                 <td class="auto-style2">&nbsp;</td>
                 <td style="font-size: large; font-weight: 700">Confirmar Contraseña<br />
                     <asp:TextBox ID="TextBox4" runat="server" Width="250px"></asp:TextBox>
+                    <asp:Label ID="Label1" runat="server" style="font-style: italic"></asp:Label>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
                 <td style="font-size: large; font-weight: 700">Teléfono<br />
                     <asp:TextBox ID="TextBox5" runat="server" Width="250px"></asp:TextBox>
-&nbsp;<asp:Label ID="Label1" runat="server" style="font-style: italic"></asp:Label>
-                </td>
+&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
@@ -81,7 +81,7 @@
             <tr>
                 <td class="auto-style2">&nbsp;</td>
                 <td style="font-size: large; font-weight: 700">
-                    <asp:Button ID="Button1" runat="server" BackColor="#24ADD9" BorderColor="#24ADD9" Text="Modificar" />
+                    <asp:Button ID="Button1" runat="server" BackColor="#24ADD9" BorderColor="#24ADD9" Text="Modificar" OnClick="Button1_Click" />
                 </td>
             </tr>
         </table>

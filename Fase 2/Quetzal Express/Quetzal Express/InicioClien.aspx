@@ -36,7 +36,7 @@
             <tr>
                 <td class="auto-style3" rowspan="2" style="border-style: outset">
                     <img alt="" class="auto-style5" src="imagenes/Quetzal.jpg" /></td>
-                <td class="auto-style4" style="border-style: outset; background-color: #E69242; text-align: center; font-weight: 700; font-size: xx-large;">BIENVENIDO</td>
+                <td class="auto-style4" style="border-style: outset; background-color: #E69242; text-align: center; font-weight: 700; font-size: xx-large;">QUETZAL EXPRESS</td>
             </tr>
             <tr>
                 <td class="auto-style6" style="border-style: outset; background-color: #E69242;">&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" BackColor="#E69242" BorderColor="#E69242" OnClick="Button1_Click" Text="Modificar Usuario" Width="116px" />

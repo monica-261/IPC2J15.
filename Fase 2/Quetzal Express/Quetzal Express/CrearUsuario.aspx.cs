@@ -14,22 +14,10 @@ namespace Quetzal_Express
         {
 
         }
-        public string conexion = "Data Source=MONICA;Initial Catalog=QuetzalExpress;Integrated Security=True";
-
+        
         string nombre, apellido, usuario, contrasenia, confirmacion, dpi, nit, tel, dir, tarjeta;
-        string cadenaconsulta;
-        SqlConnection CN;
-        SqlCommand comando;
+        WebService1 servicio = new WebService1();
 
-        public void Insertar(string CadenaAInsertar)
-        {
-            CN = new SqlConnection(conexion);
-            comando = new SqlCommand(CadenaAInsertar, CN);
-            CN.Open();
-            comando.ExecuteNonQuery();
-            CN.Close();
-        }
-    
         protected void Button2_Click(object sender, EventArgs e)
         {
             Server.Transfer("PaginaPrincipal.aspx");
@@ -37,6 +25,7 @@ namespace Quetzal_Express
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
             nombre = TextBox1.Text.Trim();
             apellido = TextBox2.Text.Trim();
             usuario = TextBox3.Text.Trim();
@@ -57,8 +46,8 @@ namespace Quetzal_Express
             else
             {
                 Label1.Text = " ";
-                cadenaconsulta = "insert into Cliente (nombre,apellido,usuario,contrasenia,dpi,nit,telefono,direccion,tarjeta) values('" + nombre + "','" + apellido + "','" + usuario + "','" + contrasenia + "','" + dpi + "','" + nit + "','" + tel + "','" + dir + "','" + tarjeta + "')";
-                Insertar(cadenaconsulta);
+                servicio.InsertarCliente(nombre, apellido, usuario, contrasenia, dpi, nit, tel, dir, tarjeta);
+
             }
             TextBox1.Text = " ";
             TextBox2.Text = " ";
