@@ -17,10 +17,11 @@ namespace Quetzal_Express
     // [System.Web.Script.Services.ScriptService]
     public class WebService1 : System.Web.Services.WebService
     {
-        string conexion = "Data Source=MONICA;Initial Catalog=QuetzalExpress;Integrated Security=True";
+        string conexion = "Data Source=MONICA-DELL\\MONICA;Initial Catalog=QuetzalExpress;Integrated Security=True";
         string cadenaconsulta;
         SqlConnection CN;
         SqlCommand comando;
+        
 
         string datos = "";
         public void Insertar(string CadenaAInsertar)
@@ -44,7 +45,30 @@ namespace Quetzal_Express
             Insertar(cadenaconsulta);
             return datos = "datos ingresados";
         }
-
-
+        [WebMethod]
+         public string InsertarEmpleado(string nombre, string apellido, string user, string pass, string sueldo, string sucursal, string puesto, string cargo)
+         {
+             cadenaconsulta = "insert into Empleado (nombre,apellido,usuario,contrasenia,sueldo,sucursal,cargo,departamento) values ('" + nombre + "','" + apellido + "','" + user + "','" + pass + "','" + sueldo + "','" + sucursal + "','" + puesto + "','" + cargo + "')";
+             Insertar(cadenaconsulta);
+             return datos = "Empleado Creado";
+         
+         }
+        [WebMethod]
+        public string Modificar(int buscar, string sueldo, string puesto, string sucursal, string departamento )
+        {
+            cadenaconsulta = "update Empleado set sueldo = '" + sueldo + "',cargo ='" + puesto + "',sucursal='" + sucursal + "',departamento ='" + departamento + "' where cod_emp ='" + buscar + "'";
+            Insertar(cadenaconsulta);
+            return datos = "Empleado modificado";
+        }
+        [WebMethod]
+        public string Despedir(int buscar)
+        { 
+            cadenaconsulta = "delete from Empleado where cod_emp ='" + buscar + "'";
+            Insertar(cadenaconsulta);
+            return datos = "Empleado Despedido";
+        
+        
+        
+        }
     }
 }

@@ -59,12 +59,25 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CargaMasiva.aspx" />
+    <Content Include="ConsultarEquipo.aspx" />
+    <Content Include="Contratar.aspx" />
+    <Content Include="DespEmp.aspx" />
     <Content Include="imagenes\arrow-right-5-32.png" />
+    <Content Include="imagenes\search-32.png" />
+    <Content Include="imagenes\upload-2-32.png" />
+    <Content Include="InicioAdm.aspx" />
     <Content Include="InicioDir.aspx" />
     <Content Include="InicioEmp.aspx" />
+    <Content Include="ModContr.aspx" />
     <Content Include="Service References\ServiceReference1\Quetzal_Express.ServiceReference1.HelloWorldResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Service References\ServiceReference1\Quetzal_Express.ServiceReference1.InsertarClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Archivo\empleados.csv" />
+    <Content Include="Archivo\impuestos.csv" />
     <None Include="Service References\ServiceReference1\WebService1.wsdl" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -90,15 +103,53 @@
     <Content Include="LogIn.aspx" />
     <Content Include="CrearUsuario.aspx" />
     <Content Include="InicioClien.aspx" />
+    <Content Include="WebForm6.aspx" />
+    <Content Include="WebForm7.aspx" />
+    <Content Include="WebForm8.aspx" />
     <Content Include="WebService1.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CargaMasiva.aspx.cs">
+      <DependentUpon>CargaMasiva.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CargaMasiva.aspx.designer.cs">
+      <DependentUpon>CargaMasiva.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarEquipo.aspx.cs">
+      <DependentUpon>ConsultarEquipo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultarEquipo.aspx.designer.cs">
+      <DependentUpon>ConsultarEquipo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contratar.aspx.cs">
+      <DependentUpon>Contratar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contratar.aspx.designer.cs">
+      <DependentUpon>Contratar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DespEmp.aspx.cs">
+      <DependentUpon>DespEmp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DespEmp.aspx.designer.cs">
+      <DependentUpon>DespEmp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EmpCotizacion.aspx.cs">
       <DependentUpon>EmpCotizacion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EmpCotizacion.aspx.designer.cs">
       <DependentUpon>EmpCotizacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InicioAdm.aspx.cs">
+      <DependentUpon>InicioAdm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioAdm.aspx.designer.cs">
+      <DependentUpon>InicioAdm.aspx</DependentUpon>
     </Compile>
     <Compile Include="InicioDir.aspx.cs">
       <DependentUpon>InicioDir.aspx</DependentUpon>
@@ -113,6 +164,13 @@
     </Compile>
     <Compile Include="InicioEmp.aspx.designer.cs">
       <DependentUpon>InicioEmp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModContr.aspx.cs">
+      <DependentUpon>ModContr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModContr.aspx.designer.cs">
+      <DependentUpon>ModContr.aspx</DependentUpon>
     </Compile>
     <Compile Include="ModificarClien.aspx.cs">
       <DependentUpon>ModificarClien.aspx</DependentUpon>
@@ -154,6 +212,27 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm6.aspx.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm6.aspx.designer.cs">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm7.aspx.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm7.aspx.designer.cs">
+      <DependentUpon>WebForm7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm8.aspx.cs">
+      <DependentUpon>WebForm8.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm8.aspx.designer.cs">
+      <DependentUpon>WebForm8.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebService1.asmx.cs">
       <DependentUpon>WebService1.asmx</DependentUpon>

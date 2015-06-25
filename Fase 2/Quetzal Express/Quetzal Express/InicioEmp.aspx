@@ -61,20 +61,20 @@
                 <td>
                     <br />
                     <br />
-                    <asp:RadioButton ID="RadioButton1" runat="server" style="font-weight: 700; font-size: large" Text="Gestión de Paquetes" />
+                    <asp:RadioButton ID="RadioButton1" runat="server" style="font-weight: 700; font-size: large" Text="Gestión de Paquetes" GroupName="InicioEmp" />
                     <br />
                     <br />
                     <br />
-                    <asp:RadioButton ID="RadioButton2" runat="server" style="font-weight: 700; font-size: large" Text="Gestión de Bodega" />
+                    <asp:RadioButton ID="RadioButton2" runat="server" style="font-weight: 700; font-size: large" Text="Gestión de Bodega" GroupName="InicioEmp" />
                     <br />
                     <br />
                     <br />
-                    <asp:RadioButton ID="RadioButton3" runat="server" style="font-weight: 700; font-size: large" Text="Gestión de Servicio al Cliente" />
+                    <asp:RadioButton ID="RadioButton3" runat="server" style="font-weight: 700; font-size: large" Text="Gestión de Servicio al Cliente" GroupName="InicioEmp" />
                     <br />
                     <br />
                     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/imagenes/arrow-right-5-32.png" style="text-align: right" />
+                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/imagenes/arrow-right-5-32.png" style="text-align: right" OnClick="ImageButton1_Click" />
                     <br />
                 </td>
             </tr>

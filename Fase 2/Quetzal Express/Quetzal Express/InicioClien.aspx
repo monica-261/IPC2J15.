@@ -17,7 +17,7 @@
             height: 148px;
         }
         .auto-style4 {
-            height: 100px;
+            height: 99px;
         }
         .auto-style5 {
             width: 175px;
@@ -39,8 +39,10 @@
                 <td class="auto-style4" style="border-style: outset; background-color: #E69242; text-align: center; font-weight: 700; font-size: xx-large;">QUETZAL EXPRESS</td>
             </tr>
             <tr>
-                <td class="auto-style6" style="border-style: outset; background-color: #E69242;">&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" BackColor="#E69242" BorderColor="#E69242" OnClick="Button1_Click" Text="Modificar Usuario" Width="116px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                <td class="auto-style6" style="border-style: outset; background-color: #E69242;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="Button1" runat="server" BackColor="#E69242" BorderColor="#E69242" OnClick="Button1_Click" Text="Modificar Usuario" Width="116px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button2" runat="server" BackColor="#E69242" BorderColor="#E69242" Text="Cotizar Paquete" />
+                </td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>

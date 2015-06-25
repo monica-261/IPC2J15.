@@ -53,7 +53,7 @@
                     Contraseña<br />
                     <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Width="143px"></asp:TextBox>
                     <br />
-                    <asp:Button ID="Button1" runat="server" BackColor="#1CA3D0" BorderColor="#1CA3D0" Text="Ingresar" />
+                    <asp:Button ID="Button1" runat="server" BackColor="#1CA3D0" BorderColor="#1CA3D0" Text="Ingresar" OnClick="Button1_Click" />
                 </td>
             </tr>
             <tr>

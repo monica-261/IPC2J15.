@@ -36,11 +36,36 @@
                 <td class="auto-style4" style="background-color: #E69242; border-style: outset; text-align: center;"><strong>COTIZACIÓN</strong></td>
             </tr>
             <tr>
-                <td class="auto-style5" style="background-color: #E69242; border-style: outset"></td>
+                <td class="auto-style5" style="background-color: #E69242; border-style: outset; text-align: center; font-weight: 700;">Ingrese datos del paquete</td>
             </tr>
             <tr>
                 <td class="auto-style2">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td style="font-size: large; font-weight: 700">
+                    <br />
+                    <br />
+                    Costo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox1" runat="server" Width="154px"></asp:TextBox>
+                    <br />
+                    <br />
+                    <br />
+                    Peso&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox2" runat="server" Width="154px"></asp:TextBox>
+                    <br />
+                    <br />
+                    <br />
+                    Categoria&nbsp;&nbsp;&nbsp;<asp:TextBox ID="TextBox3" runat="server" Width="154px"></asp:TextBox>
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button1" runat="server" BackColor="#1FB4DF" BorderColor="#1FB4DF" OnClick="Button1_Click" Text="Cotizar" />
+&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td style="font-size: large; font-weight: 700">
+                    &nbsp;</td>
             </tr>
         </table>
     

@@ -21,6 +21,13 @@ namespace Quetzal_Express.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://LocalHost/WebServiceProyecto/HelloWorld", ReplyAction="*")]
         System.Threading.Tasks.Task<Quetzal_Express.ServiceReference1.HelloWorldResponse> HelloWorldAsync(Quetzal_Express.ServiceReference1.HelloWorldRequest request);
+        
+        // CODEGEN: Generating message contract since element name nombre from namespace http://LocalHost/WebServiceProyecto is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://LocalHost/WebServiceProyecto/InsertarCliente", ReplyAction="*")]
+        Quetzal_Express.ServiceReference1.InsertarClienteResponse InsertarCliente(Quetzal_Express.ServiceReference1.InsertarClienteRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://LocalHost/WebServiceProyecto/InsertarCliente", ReplyAction="*")]
+        System.Threading.Tasks.Task<Quetzal_Express.ServiceReference1.InsertarClienteResponse> InsertarClienteAsync(Quetzal_Express.ServiceReference1.InsertarClienteRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -84,6 +91,106 @@ namespace Quetzal_Express.ServiceReference1 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class InsertarClienteRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="InsertarCliente", Namespace="http://LocalHost/WebServiceProyecto", Order=0)]
+        public Quetzal_Express.ServiceReference1.InsertarClienteRequestBody Body;
+        
+        public InsertarClienteRequest() {
+        }
+        
+        public InsertarClienteRequest(Quetzal_Express.ServiceReference1.InsertarClienteRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://LocalHost/WebServiceProyecto")]
+    public partial class InsertarClienteRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string nombre;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string apellido;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string usuario;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string pass;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string dpi;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string nit;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string tel;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string dir;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string tar;
+        
+        public InsertarClienteRequestBody() {
+        }
+        
+        public InsertarClienteRequestBody(string nombre, string apellido, string usuario, string pass, string dpi, string nit, string tel, string dir, string tar) {
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.usuario = usuario;
+            this.pass = pass;
+            this.dpi = dpi;
+            this.nit = nit;
+            this.tel = tel;
+            this.dir = dir;
+            this.tar = tar;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class InsertarClienteResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="InsertarClienteResponse", Namespace="http://LocalHost/WebServiceProyecto", Order=0)]
+        public Quetzal_Express.ServiceReference1.InsertarClienteResponseBody Body;
+        
+        public InsertarClienteResponse() {
+        }
+        
+        public InsertarClienteResponse(Quetzal_Express.ServiceReference1.InsertarClienteResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://LocalHost/WebServiceProyecto")]
+    public partial class InsertarClienteResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string InsertarClienteResult;
+        
+        public InsertarClienteResponseBody() {
+        }
+        
+        public InsertarClienteResponseBody(string InsertarClienteResult) {
+            this.InsertarClienteResult = InsertarClienteResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface WebService1SoapChannel : Quetzal_Express.ServiceReference1.WebService1Soap, System.ServiceModel.IClientChannel {
     }
@@ -132,6 +239,47 @@ namespace Quetzal_Express.ServiceReference1 {
             Quetzal_Express.ServiceReference1.HelloWorldRequest inValue = new Quetzal_Express.ServiceReference1.HelloWorldRequest();
             inValue.Body = new Quetzal_Express.ServiceReference1.HelloWorldRequestBody();
             return ((Quetzal_Express.ServiceReference1.WebService1Soap)(this)).HelloWorldAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Quetzal_Express.ServiceReference1.InsertarClienteResponse Quetzal_Express.ServiceReference1.WebService1Soap.InsertarCliente(Quetzal_Express.ServiceReference1.InsertarClienteRequest request) {
+            return base.Channel.InsertarCliente(request);
+        }
+        
+        public string InsertarCliente(string nombre, string apellido, string usuario, string pass, string dpi, string nit, string tel, string dir, string tar) {
+            Quetzal_Express.ServiceReference1.InsertarClienteRequest inValue = new Quetzal_Express.ServiceReference1.InsertarClienteRequest();
+            inValue.Body = new Quetzal_Express.ServiceReference1.InsertarClienteRequestBody();
+            inValue.Body.nombre = nombre;
+            inValue.Body.apellido = apellido;
+            inValue.Body.usuario = usuario;
+            inValue.Body.pass = pass;
+            inValue.Body.dpi = dpi;
+            inValue.Body.nit = nit;
+            inValue.Body.tel = tel;
+            inValue.Body.dir = dir;
+            inValue.Body.tar = tar;
+            Quetzal_Express.ServiceReference1.InsertarClienteResponse retVal = ((Quetzal_Express.ServiceReference1.WebService1Soap)(this)).InsertarCliente(inValue);
+            return retVal.Body.InsertarClienteResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Quetzal_Express.ServiceReference1.InsertarClienteResponse> Quetzal_Express.ServiceReference1.WebService1Soap.InsertarClienteAsync(Quetzal_Express.ServiceReference1.InsertarClienteRequest request) {
+            return base.Channel.InsertarClienteAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Quetzal_Express.ServiceReference1.InsertarClienteResponse> InsertarClienteAsync(string nombre, string apellido, string usuario, string pass, string dpi, string nit, string tel, string dir, string tar) {
+            Quetzal_Express.ServiceReference1.InsertarClienteRequest inValue = new Quetzal_Express.ServiceReference1.InsertarClienteRequest();
+            inValue.Body = new Quetzal_Express.ServiceReference1.InsertarClienteRequestBody();
+            inValue.Body.nombre = nombre;
+            inValue.Body.apellido = apellido;
+            inValue.Body.usuario = usuario;
+            inValue.Body.pass = pass;
+            inValue.Body.dpi = dpi;
+            inValue.Body.nit = nit;
+            inValue.Body.tel = tel;
+            inValue.Body.dir = dir;
+            inValue.Body.tar = tar;
+            return ((Quetzal_Express.ServiceReference1.WebService1Soap)(this)).InsertarClienteAsync(inValue);
         }
     }
 }
